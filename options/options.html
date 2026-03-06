@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ducksy – Options</title>
+    <link rel="stylesheet" href="../dist/styles.css" />
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-sans flex justify-center p-12">
+    <div class="w-full max-w-md flex flex-col gap-5">
+        <h1 class="text-2xl font-bold text-white">⚙️ Ducksy Options</h1>
+
+        <div class="flex flex-col gap-1.5">
+            <label for="api-key" class="text-sm font-semibold text-gray-400">Gemini API Key</label>
+            <input type="password" id="api-key" placeholder="Enter your API key"
+                class="px-3.5 py-2.5 border border-gray-700 rounded-lg bg-gray-800 text-gray-100 text-sm outline-none transition-colors duration-200 focus:border-indigo-500" />
+        </div>
+
+        <button id="save-btn"
+            class="py-2.5 rounded-lg bg-linear-to-br from-indigo-500 to-violet-500 text-white text-sm font-semibold cursor-pointer transition-opacity duration-200 hover:opacity-90">
+            Save
+        </button>
+        <p id="status" class="text-sm text-green-500 min-h-[18px]"></p>
+    </div>
+    <script src="../dist/options/options.js"></script>
+</body>
+
+</html>

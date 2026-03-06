@@ -1,0 +1,23 @@
+{
+  "name": "ducksy-extension",
+  "version": "1.0.0",
+  "description": "A Gemini-powered browser assistant for fast audio summaries and MCP tool integrations.",
+  "main": "dist/background/service-worker.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i src/styles/input.css -o dist/styles.css --minify",
+    "build:ts": "tsc",
+    "build": "npm run build:ts && npm run build:css",
+    "watch:css": "npx @tailwindcss/cli -i src/styles/input.css -o dist/styles.css --watch",
+    "watch:ts": "tsc --watch",
+    "dev": "npm run build:ts && npm run build:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "@types/chrome": "^0.1.37",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Ducksy",
+    "version": "0.1.0",
+    "description": "A Gemini-powered browser assistant for fast audio summaries and MCP tool integrations.",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "dist/background/service-worker.js",
+        "type": "module"
+    },
+    "options_page": "options/options.html",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
